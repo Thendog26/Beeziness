@@ -1,0 +1,75 @@
+h1 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    color: #000;
+}
+.logo-large {
+    background: url('src/images/SwarmwatchLogo.svg');
+    background-size: cover;
+
+    height: 160px;
+    width: 200px;
+}
+
+/* Page classes */
+.authpage-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+
+    background-color: #E9E9E9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.authpage-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authpage-header {
+    width: 100%;
+    height: 40%;
+}
+
+.authpage-form {
+    width: 100%;
+    height: 60%;
+
+    border-radius: 3rem 3rem 0rem 0rem;
+    background: linear-gradient(180deg, #FFC718 5.05%, #FAD151 100%);
+
+    box-shadow: 0px 5px 15px 15px #9A9A9A40;
+}
+
+.form-section {
+    width: 80%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
