@@ -94,7 +94,7 @@
 }
 
 .notification-Safe-icon {
-  z-index: 2;
+  z-index: 3;
   background: url("src/images/SafeSymbol.svg");
   background-size: cover;
   min-height: 30px;
