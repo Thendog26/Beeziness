@@ -33,7 +33,7 @@ const AuthPage = () => {
 
     // Submit funcitons
     const LoginSubmit = ({email, password}: {email: string; password: string;}) => {
-        history.push('/dsahboard');
+        history.push('/dashboard');
     }
 
     const SignUpSubmit = () => {

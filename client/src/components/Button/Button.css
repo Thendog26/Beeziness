@@ -9,6 +9,7 @@
     cursor: pointer;
 }
 
+/* Themes */
 .primary-button {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -16,5 +17,6 @@
     font-weight: 700;
 
     color: white;
-    background-color: rgb(64, 46, 37);
+    background: linear-gradient(180deg, #28DB88 0%, rgba(37, 190, 119, 0.85) 100%);
+
 }
