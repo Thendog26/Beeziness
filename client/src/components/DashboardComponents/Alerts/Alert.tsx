@@ -1,7 +1,11 @@
+import { useHistory } from "react-router-dom";
+
 const Alert = ({ number, type }: { number: number; type: string }) => {
+  const history = useHistory();
+
   if (type === "safe") {
     return (
-      <div className="alert safe">
+      <div className="alert safe" onClick={() => history.push(`/hive/${type}`)}>
         <div>
           <div className="alert-number">{number}</div>
           <div className="alert-description">Healthy Hives</div>
@@ -11,7 +15,7 @@ const Alert = ({ number, type }: { number: number; type: string }) => {
     );
   } else if (type === "warning") {
     return (
-      <div className="alert warning">
+      <div className="alert warning" onClick={() => history.push(`/hive/${type}`)}>
         <div>
           <div className="alert-number">{number}</div>
           <div className="alert-description">Swarm Warnings</div>
@@ -21,7 +25,7 @@ const Alert = ({ number, type }: { number: number; type: string }) => {
     );
   } else if (type === "critical") {
     return (
-      <div className="alert critical">
+      <div className="alert critical" onClick={() => history.push(`/hive/${type}`)}>
         <div>
           <div className="alert-number">{number}</div>
           <div className="alert-description">Swarm Alerts</div>

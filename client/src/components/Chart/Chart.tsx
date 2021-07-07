@@ -1,8 +1,8 @@
 import { Line } from "react-chartjs-2";
 import { Router } from "react-router-dom";
 import { useEffect } from "react";
-import hive_temperature from "./hive_temperature";
-
+import hive_temperature_temp from "./hive_temperature_temp";
+import hive_temperature_trend from "./hive_temperature_trend";
 const Chart = () => {
 
     let chartData;
@@ -10,10 +10,14 @@ const Chart = () => {
     useEffect(() => {
         fetch("https://kzou8q92w8.execute-api.us-east-1.amazonaws.com/prod",{ 
             method: "GET",  
+            mode: 'cors',
             headers: {
-                'Access-Control-Allow-Origin' : 'https://kzou8q92w8.execute-api.us-east-1.amazonaws.com',
-                'Access-Control-Allow-Methods' : 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-                'Access-Control-Allow-Headers': 'Content-Type',
+              'content-type': 'application/json',
+                // 'Access-Control-Allow-Origin' : '*',
+                // 'Access-Control-Allow-Credentials': 'false',
+                // 'Access-Control-Allow-Methods' : 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                // 'Access-Control-Allow-Headers': '*',
+
             }
         }).then(function(data){
             chartData = data;
@@ -25,7 +29,7 @@ const Chart = () => {
         const dayLabels = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const state = {
         // labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        labels: hive_temperature.time.map(temp => dayLabels[new Date(temp).getDay()] + '-' + new Date(temp).getHours() + ":00"),
+        labels: hive_temperature_temp.time.map(temp => dayLabels[new Date(temp).getDay()] + '-' + new Date(temp).getHours() + ":00"),
         datasets: [
           {
             label: 'Temperature',
@@ -36,7 +40,7 @@ const Chart = () => {
             borderWidth: 2,
             pointRadius: 0,
             // data: [65, 59, 80, 81, 56, 90, 70],
-            data: hive_temperature.temperatue
+            data: hive_temperature_temp.temperatue
           },
           {
             label: 'Trend',
@@ -46,7 +50,7 @@ const Chart = () => {
             borderColor: '#ffbc5a',
             borderWidth: 2,
             pointRadius: 0,
-            data: [hive_temperature.temperatue[0], hive_temperature.temperatue[hive_temperature.temperatue.length-1]]
+            data: hive_temperature_trend.trend_line
           }
         ]
       }

@@ -7,6 +7,7 @@ const Notification = ({
   description: string;
   id: number;
 }) => {
+
   return (
     <div id={`${id}`} className="notification-content">
       <div className={`notification-${type}-icon`} />
