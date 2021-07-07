@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+hive_temperature.tsx
 
 # testing
 /coverage
