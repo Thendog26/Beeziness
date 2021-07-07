@@ -36,15 +36,15 @@ h3 {
 }
 
 .space {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .white {
-    color: #fff;
+  color: #fff;
 }
 
 .black {
-    color: #000;
+  color: #000;
 }
 
 /* Logos and Icons */
@@ -123,19 +123,19 @@ h3 {
 }
 
 .sound-icon {
-    background: url("src/images/soundIcon.svg");
-    background-size: cover;
-    height: 2em;
-    width: 2em;
-    display: block;
+  background: url("src/images/soundIcon.svg");
+  background-size: cover;
+  height: 2em;
+  width: 2em;
+  display: block;
 }
 
 .divider-icon {
-    background: url("src/images/dividerIcon.svg");
-    background-size: cover;
-    height: 2em;
-    width: 0.25em;
-    display: block;
+  background: url("src/images/dividerIcon.svg");
+  background-size: cover;
+  height: 2em;
+  width: 0.25em;
+  display: block;
 }
 
 .flex-row {
@@ -150,11 +150,11 @@ h3 {
 }
 
 .align {
-    align-items: center;
+  align-items: center;
 }
 
 .min-height {
-    min-height: 100%;
+  min-height: 100%;
 }
 /* ### Page classes ### */
 /* Auth Page */
@@ -236,73 +236,114 @@ h3 {
 
 /* Hive Page */
 .hivepage-content {
-    border-radius: 2rem;
-    padding: 1.5rem 2rem;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
 }
 
 .hive-header {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif ;
-    font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: -0.015em;
-    text-align: left;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+  text-align: left;
 }
 
 .hive-subheader {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: -0.015em;
-    text-align: left;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+  text-align: left;
 }
 
 .hive-paragraph {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: -0.015em;
-    text-align: left;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  text-align: left;
 }
 
 .hivepage-safe {
-    background: linear-gradient(180deg, #22A468 0%, rgba(115, 193, 60, 0.902023) 64.43%, rgba(123, 205, 55, 0.87) 100%);
+  background: linear-gradient(
+    180deg,
+    #22a468 0%,
+    rgba(115, 193, 60, 0.902023) 64.43%,
+    rgba(123, 205, 55, 0.87) 100%
+  );
 }
 
 .hivepage-warning {
-    background: linear-gradient(180deg, #FFBC5A 0%, #D17D1A 100%);
+  background: linear-gradient(180deg, #ffbc5a 0%, #d17d1a 100%);
 }
 
 .hivepage-critical {
-    background: linear-gradient(180deg, #FD5D51 0%, rgba(215, 51, 15, 0.87) 100%);
+  background: linear-gradient(180deg, #fd5d51 0%, rgba(215, 51, 15, 0.87) 100%);
 }
 
 .hivepage-listitem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    background: linear-gradient(180deg, #FFFFFF 0%, #DADADA 100%);
-    width: 80%;
-    height: 5rem;
-    border-radius: 1rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background: linear-gradient(180deg, #ffffff 0%, #dadada 100%);
+  width: 80%;
+  height: 5rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hivepage-graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background: linear-gradient(180deg, #ffffff 0%, #dadada 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hivepage-listitem:hover {
+  filter: brightness(95%);
 }
 
 .hivepage-listitem-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hivepageinfo-container {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 214, 112, 0.98) 0%,
+    rgba(218, 218, 218, 0.87) 100%
+  );
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  width: 70%;
+  height: 100%;
 }
