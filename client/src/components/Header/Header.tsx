@@ -19,7 +19,7 @@ const Header = () => {
     <div className="dashboard-header">
       <div className="flex-row">
         <div className="logo-small" onClick={() => menuTrigger} />
-        <h3>SWARMWATCH</h3>
+        <h3>BEEZINESS</h3>
       </div>
       <div className="flex-row">
         <i

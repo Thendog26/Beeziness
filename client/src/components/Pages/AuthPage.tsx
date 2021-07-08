@@ -51,7 +51,7 @@ const AuthPage = () => {
       <div className="authpage-container">
         <div className="authpage-body authpage-header">
           <i className="logo-large" />
-          <h1>SWARMWATCH</h1>
+          <h1>BEEZINESS</h1>
         </div>
         <div className="authpage-body authpage-form">
           <FormSection>
@@ -80,7 +80,7 @@ const AuthPage = () => {
       <div className="authpage-container">
         <div className="authpage-body authpage-header">
           <i className="logo-large" />
-          <h1>SWARMWATCH</h1>
+          <h1>BEEZINESS</h1>
         </div>
         <div className="authpage-body authpage-form">
           <FormSection>
