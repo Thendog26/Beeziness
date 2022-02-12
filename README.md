@@ -1,1 +1,2 @@
-# swarmwatch
+# 'Beeziness'
+#### A React-based proof-of-concept application interface for beekeepers to track the likelihood of their beehives swarming based on external theoretical IoT statistics like temperature and sound. The idea is that users could buy artificial hives that come with a variety of in-built sensors designed to monitor real-time data on beehives and predict the likelihood of swarming occurring using machine learning models. The algorithm then splits the hives into critical, warning, and safe categories. This interface serves as a concept of the Front-End for this beehive tracking system, assuming the underlying system existed.
